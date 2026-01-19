@@ -240,6 +240,64 @@ body {
 }
 /* status area end */
 
+/* service area start */
+#service-section {
+	padding: 120px 0;
+	background-color: #230e3d;
+}
+#service-section .service-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+#service-section .service-title h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+#service-section .service-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 30px;
+}
+#service-section .service-content .service-card {
+	/* max-width: 380px; */
+	padding: 40px;
+	background-color: rgba(53, 17, 101, 0.4);
+	border-radius: 40px;
+}
+#service-section .service-content .service-card h3 {
+	margin: 16px 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+#service-section .service-content .service-card p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.5;
+}
+#service-section .service-content .one {
+	padding: 107px 40px;
+	grid-column: span 1;
+	grid-row: span 2;
+}
+#service-section .service-content .common {
+	grid-column: span 2;
+	grid-row: span 1;
+}
+#service-section .service-content .two {
+	grid-column: span 2;
+	grid-row: span 1;
+}
+#service-section .service-content .three {
+	grid-column: span 1;
+	grid-row: span 1;
+}
+/* service area end */
+
 /* Responsive area start */
 
 @media screen and (max-width: 576px) {
@@ -288,6 +346,68 @@ body {
 		padding: 20px;
 	}
 	/* About area end */
+
+	/* divide section start */
+	.divider hr {
+		margin: 50px 0;
+	}
+	/* divide section end */
+
+	/* status section start */
+	#status-section .status-content {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 50px;
+	}
+	#status-section .status-content .status-card h3 {
+		font-size: 2rem;
+	}
+	#status-section .status-content .status-card p {
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.25;
+		text-transform: uppercase;
+	}
+	/* status section end */
+
+	/* service section start */
+	#service-section .service-title h2 {
+		font-size: 2rem;
+	}
+	#service-section .service-content {
+		grid-template-columns: repeat(1, 1fr);
+		align-items: center;
+		gap: 15px;
+	}
+	#service-section .service-content .service-card {
+		padding: 28px;
+	}
+	#service-section .service-content .service-card h3 {
+		font-size: 1.25rem;
+	}
+	#service-section .service-content .service-card p {
+		font-size: 0.9rem;
+	}
+
+	#service-section .service-content .one {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	#service-section .service-content .common {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	#service-section .service-content .two {
+		padding: 30px;
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	#service-section .service-content .three {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	/* service section end */
 }
 
 /* Responsive area end */
