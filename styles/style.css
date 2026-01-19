@@ -302,13 +302,78 @@ body {
 #featured-area {
 	margin: 120px 0;
 }
-#featured-area .featured-content {
+#featured-area .featured-content .featured-title {
 	text-align: center;
 }
-#featured-area .featured-content h2 {
+#featured-area .featured-content .featured-title h2 {
 	font-size: 3rem;
 	font-weight: 700;
 	color: #fff;
+	margin-bottom: 40px;
+}
+#featured-area .featured-content .featured-container .featured-card {
+	max-width: 380px;
+	background-color: #412567;
+	border-radius: 40px;
+}
+
+#featured-area .featured-content .featured-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	justify-items: center;
+}
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.featured-card-info {
+	padding: 24px;
+}
+
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.featured-card-info
+	h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.featured-card-info
+	.card-para {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.5;
+	margin-top: 12px;
+}
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.featured-card-info
+	#mini-text {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	color: #00ff88;
+	margin-top: 12px;
+}
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.featured-card-info
+	#mini-text
+	i {
+	margin-right: 6px;
 }
 
 /* featured area end */
@@ -423,6 +488,42 @@ body {
 		grid-row: span 1;
 	}
 	/* service section end */
+
+	/* featured area start */
+
+	#featured-area .featured-content .featured-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#featured-area .featured-content .featured-title h2 {
+		font-size: 2rem;
+	}
+	#featured-area
+		.featured-content
+		.featured-container
+		.featured-card
+		.featured-card-info
+		h3 {
+		font-size: 1.2rem;
+	}
+	#featured-area
+		.featured-content
+		.featured-container
+		.featured-card
+		.featured-card-info
+		.card-para {
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	#featured-area
+		.featured-content
+		.featured-container
+		.featured-card
+		.featured-card-info {
+		padding: 16px;
+	}
+	/* featured area end */
 }
 
 /* Responsive area end */
