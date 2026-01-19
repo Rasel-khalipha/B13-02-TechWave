@@ -258,14 +258,14 @@ body {
 #service-section .service-content {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
 	gap: 30px;
 }
 #service-section .service-content .service-card {
-	/* max-width: 380px; */
 	padding: 40px;
 	background-color: rgba(53, 17, 101, 0.4);
 	border-radius: 40px;
+	align-content: center;
 }
 #service-section .service-content .service-card h3 {
 	margin: 16px 0;
@@ -280,7 +280,6 @@ body {
 	line-height: 1.5;
 }
 #service-section .service-content .one {
-	padding: 107px 40px;
 	grid-column: span 1;
 	grid-row: span 2;
 }
@@ -297,6 +296,22 @@ body {
 	grid-row: span 1;
 }
 /* service area end */
+
+/* featured area start */
+
+#featured-area {
+	margin: 120px 0;
+}
+#featured-area .featured-content {
+	text-align: center;
+}
+#featured-area .featured-content h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+/* featured area end */
 
 /* Responsive area start */
 
