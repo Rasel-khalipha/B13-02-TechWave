@@ -169,9 +169,81 @@ body {
 }
 /* Banner area end */
 
+/* about area start */
+#about-section {
+	margin-top: 50px;
+}
+#about-section .about-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#about-section .about-content {
+	max-width: 720px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+#about-section .about-content h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+#about-section .about-content p {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.25;
+}
+#about-section .about-content p:last-child {
+	margin-top: 30px;
+}
+
+/* about area end */
+
+/* divider area start */
+.divider hr {
+	border: none;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	margin: 80px 0;
+}
+/* divider area end */
+
+/* status area start */
+#status-section .status-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	align-items: center;
+	gap: 80px;
+	padding-bottom: 120px;
+}
+#status-section .status-content .status-card {
+	max-width: 240px;
+	text-align: center;
+}
+#status-section .status-content .status-card h3 {
+	font-size: 3rem;
+	font-weight: 900;
+	color: #00ff88;
+	margin-bottom: 16px;
+}
+#status-section .status-content .status-card p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+/* status area end */
+
 /* Responsive area start */
 
 @media screen and (max-width: 576px) {
+	/* Header area start */
 	#header-area {
 		padding: 16px 20px;
 	}
@@ -184,6 +256,38 @@ body {
 	#header-area .navbar .mobile-menu {
 		display: block;
 	}
+
+	/* Header area end */
+
+	/* Banner area start */
+
+	#banner-area {
+		background-position: 45% 30%;
+		background-size: 100%;
+	}
+	#banner-area .banner-container .banner-image {
+		max-width: 155px;
+	}
+	#banner-area .banner-container .banner-image .new-btn {
+		top: 0px;
+		right: -20px;
+	}
+	#banner-area .banner-container .banner-image .mini-image {
+		width: 30%;
+	}
+	#banner-area .banner-container .banner-content h1 {
+		font-size: 2rem;
+	}
+	/* Banner area end */
+
+	/* About area start */
+	#about-section .about-content h2 {
+		font-size: 2rem;
+	}
+	#about-section .about-content {
+		padding: 20px;
+	}
+	/* About area end */
 }
 
 /* Responsive area end */
