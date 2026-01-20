@@ -376,7 +376,113 @@ body {
 	margin-right: 6px;
 }
 
+#featured-area .featured-content .featured-container .featured-card .top {
+	max-width: 380px;
+	position: relative;
+}
+#featured-area .featured-content .featured-container .featured-card .play-btn {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: linear-gradient(
+		to top right,
+		#f7e93f,
+		#fb09b4,
+		#9100f8,
+		#9100f8,
+		#fb09b4,
+		#f7e93f
+	);
+	cursor: pointer;
+	background-size: 200% 200%;
+	background-position: left bottom;
+	transition:
+		background-position 0.8s ease-in-out,
+		transform 0.4s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.play-btn:hover {
+	background-position: right top;
+}
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.play-btn
+	i {
+	display: inline-block;
+	transition: transform 0.4s ease-in-out;
+	color: #fff;
+}
+
+#featured-area
+	.featured-content
+	.featured-container
+	.featured-card
+	.play-btn:hover
+	i {
+	transform: translateX(5px);
+}
+
 /* featured area end */
+
+/* Host area start */
+#host-area {
+	margin-bottom: 120px;
+}
+#host-area .host-content .host-title h2 {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 40px;
+}
+#host-area .host-content .host-info {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	background-color: #412567;
+	padding: 40px;
+	border-radius: 40px;
+}
+#host-area .host-content .host-info .host-text h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+}
+#host-area .host-content .host-info .host-text p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.5;
+	margin: 16px 0;
+}
+#host-area .host-content .host-info .host-text .host-social {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+#host-area .host-content .host-info .host-text .host-social a {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #533c72;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+}
+/* Host area end */
 
 /* Responsive area start */
 
@@ -410,6 +516,7 @@ body {
 		top: 0px;
 		right: -20px;
 	}
+
 	#banner-area .banner-container .banner-image .mini-image {
 		width: 30%;
 	}
@@ -524,6 +631,21 @@ body {
 		padding: 16px;
 	}
 	/* featured area end */
+
+	/* Host area start */
+	#host-area .host-content .host-info {
+		flex-direction: column;
+		padding: 12px;
+		text-align: center;
+	}
+	#host-area .host-content .host-title h2 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#host-area .host-content .host-info .host-text .host-social {
+		justify-content: center;
+	}
+	/* Host area end */
 }
 
 /* Responsive area end */
